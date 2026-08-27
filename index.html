@@ -4,15 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/TabHolder.png" type="image/png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page-wrapper">
+  <div class="page-wrapper" id="top">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="nav-logo" href="#top" aria-label="Back to the top">AS</a>
+      <div class="nav-links">
+        <a class="nav-link" href="#top">Overview</a>
+        <a class="nav-link" href="#goals">Goals</a>
+        <a class="nav-link" href="#featured-work">Featured Work</a>
+      </div>
+    </nav>
+
     <header class="site-hero">
       <div class="hero-copy">
-        <p class="eyebrow">Web Development Student</p>
+        <p class="eyebrow">Data Science Student</p>
         <h1>Hi, I’m Adhish Sharma</h1>
-        <p class="hero-description">Iam currently a student, focusing on getting my degree while taking advantages of new opportunities in web development and software engineering.</p>
+        <p class="hero-description">I am currently a student, focusing on earning my degree while taking advantage of new opportunities in web development and software engineering.</p>
         <div class="personal-info">
           <div><span>College</span> University of California, Riverside</div>
           <div><span>Major</span> Data Science</div>
@@ -32,20 +45,20 @@
     </header>
 
     <main class="content-body">
-      <section class="section section-overview">
+      <section class="section section-overview" id="overview">
         <div class="section-copy">
           <p class="section-label">Accomplishments</p>
           <h2>Projects built with strong passion</h2>
-          <p>I've beeen more focused on my classes, buth when I have the time, I enjoy working on personal projects that allow me to explore new technologies and techniques.</p>
+          <p>I've been more focused on my classes, but when I have the time, I enjoy working on personal projects that allow me to explore new technologies and techniques.</p>
           <ul>
-            <li>A quiz program what I built to practice my python skills</li>
+            <li>A quiz program that I built to practice my Python skills</li>
             <li>Algorithms in C++</li>
-            <li>Websites like this enhancing my web development skills</li>
+            <li>Websites like this one that enhance my web development skills</li>
           </ul>
         </div>
       </section>
 
-      <section class="section section-goals">
+      <section class="section section-goals" id="goals">
         <div class="section-copy">
           <p class="section-label">Goals</p>
           <h2>Growing skills for professional web work and software engineering</h2>
@@ -58,7 +71,7 @@
         </div>
       </section>
 
-      <section class="section featured-projects">
+      <section class="section featured-projects" id="featured-work">
         <div class="section-copy">
           <p class="section-label">Featured Work</p>
           <h2>Projects I am proud to share</h2>
@@ -126,5 +139,7 @@
       <p>Thanks for visiting my portfolio. I’m excited to share more of my work and continue learning modern web development.</p>
     </footer>
   </div>
+  <button class="back-to-top" type="button" aria-label="Back to top">&#8593;</button>
+  <script src="script.js"></script>
 </body>
 </html>
